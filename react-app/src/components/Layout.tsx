@@ -5,7 +5,7 @@ function Layout() {
     <div>
       <nav className="">
         <Link to="/">Home</Link> | <Link to="/users"> Users </Link> |{" "}
-        <Link to="/counter"> Counter </Link>
+        <Link to="/counter"> Counter </Link> | <Link to="/posts"> Posts </Link>
       </nav>
 
       <main>
