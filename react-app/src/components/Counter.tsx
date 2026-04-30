@@ -1,4 +1,5 @@
 import { useCounterStore } from "../store/counterStore";
+import { Button } from "./ui/button";
 
 function Counter() {
   const count = useCounterStore((state) => state.count);
@@ -9,9 +10,15 @@ function Counter() {
   return (
     <div>
       <h2>Contador: {count}</h2>
-      <button onClick={increment}>Incrementar</button>
-      <button onClick={decrement}>Reducir</button>
-      <button onClick={reset}>Reiniciar Contador</button>
+      <Button variant="default" onClick={increment}>
+        Incrementar
+      </Button>
+      <Button variant="outline" onClick={decrement}>
+        Reducir
+      </Button>
+      <Button variant="secondary" onClick={reset}>
+        Reiniciar Contador
+      </Button>
     </div>
   );
 }
